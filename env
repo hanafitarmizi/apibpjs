@@ -1,0 +1,53 @@
+APP_NAME=Lumen
+APP_ENV=development
+
+# APP_KEY=^%R*^%R*&YUIPHP*UHOIUHIH
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+APP_TIMEZONE=Asia/Jakarta
+APP_TIMEZONE_BPJS=UTC
+
+LOG_CHANNEL=stack
+LOG_SLACK_WEBHOOK_URL=
+
+DB_CONNECTION=mysql
+DB_HOST=192.168.123.3
+DB_PORT=3306
+DB_DATABASE=simrs_dev
+DB_USERNAME=root
+DB_PASSWORD=db@rsjtampan
+
+# PG_DB_CONNECTION=pgsql
+# PG_DB_HOST=192.168.254.70
+# PG_DB_PORT=5432
+# PG_DB_DATABASE=simrs
+# PG_DB_USERNAME=postgres
+# PG_DB_PASSWORD=1satu2dua
+
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+
+BPJS_ID=0103
+
+#BPJS
+    #PARAMS
+        BPJS_PPK_KODE=0401R001
+        BPJS_PPK_NAMA=RS Jiwa Tampan
+        BPJS_KODE_REGISTRASI=1471011
+
+    #BRIDGING
+        #DEV
+        BPJS_URL=https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/
+        BPJS_ANTROL_URL=https://apijkn-dev.bpjs-kesehatan.go.id/antreanrs_dev
+        BPJS_CONSID=19567
+        BPJS_PASSWORD=F3S3ppujRm
+        BPJS_USER_KEY=aac0fb5e288e9b3be5b98145978320f4
+        BPJS_ENCRYPT_METHOD=AES-256-CBC
+
+        #PROD
+        #BPJS_URL=https://apijkn-dev.bpjs-kesehatan.go.id/vclaim-rest-dev/
+        #BPJS_CONSID=8120
+        #BPJS_PASSWORD=2oI02C6594
+        #BPJS_USER_KEY=5ebe981f42c86b1662cb7421c6de8208
+        #BPJS_ENCRYPT_METHOD=AES-256-CBC
